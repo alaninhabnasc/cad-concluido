@@ -14,7 +14,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         .container {
@@ -54,15 +54,32 @@
         .btn-exemplo:hover {
             background-color: #4A148C;
         }
+
+        /* 🔹 QUANDO INSPECIONAR / MOBILE */
+        @media (max-width: 768px) {
+            body {
+                background-color: #DDE1FF;
+                align-items: flex-start;
+            }
+
+            .container {
+                width: 100%;
+                max-width: 100%;
+                min-height: 100vh;
+                border-radius: 0;
+                box-shadow: none;
+                padding: 40px 20px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <div class="container">
-        <img src="dialogx.jpeg" alt="Logo">
+        <img src="dialogx.jpeg" alt="Logo DialogX">
         <h1>Cadastro concluído com sucesso!</h1>
 
-        <!-- ✅ BOTÃO FUNCIONANDO -->
         <a href="https://alaninhabnasc.github.io/chatbot/" class="btn-exemplo">
             Clique aqui para ver um exemplo do nosso chatbot
         </a>
